@@ -70,7 +70,7 @@
                                 <rect key="frame" x="180" y="250" width="55" height="30"/>
                                 <state key="normal" title="2 Player"/>
                                 <connections>
-                                    <action selector="playerTwo:" destination="Ph1-TQ-Qda" eventType="touchUpInside" id="RFU-AY-ncf"/>
+                                    <action selector="playerTwoButton:" destination="Ph1-TQ-Qda" eventType="touchUpInside" id="kni-h4-EqW"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -20,9 +20,6 @@
 		DAC223B4249645F000DF86D4 /* AmaticSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAC223B3249645F000DF86D4 /* AmaticSC-Regular.ttf */; };
 		DAC223B5249645F000DF86D4 /* AmaticSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAC223B3249645F000DF86D4 /* AmaticSC-Regular.ttf */; };
 		DAC223B6249645F000DF86D4 /* AmaticSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAC223B3249645F000DF86D4 /* AmaticSC-Regular.ttf */; };
-		DAC223B82496722300DF86D4 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC223B72496722300DF86D4 /* MainMenu.swift */; };
-		DAC223B92496722300DF86D4 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC223B72496722300DF86D4 /* MainMenu.swift */; };
-		DAC223BA2496722300DF86D4 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC223B72496722300DF86D4 /* MainMenu.swift */; };
 		DAC223BC2496728400DF86D4 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC223BB2496728400DF86D4 /* MainMenuViewController.swift */; };
 		DAC223BD2496728400DF86D4 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC223BB2496728400DF86D4 /* MainMenuViewController.swift */; };
 		DAC223BE2496728400DF86D4 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC223BB2496728400DF86D4 /* MainMenuViewController.swift */; };
@@ -63,8 +60,8 @@
 		DAC223A52495345A00DF86D4 /* PpongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PpongUITests.swift; sourceTree = "<group>"; };
 		DAC223A72495345A00DF86D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAC223B3249645F000DF86D4 /* AmaticSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AmaticSC-Regular.ttf"; path = "../../../../../Downloads/Font/Abril_Fatface,Alfa_Slab_One,Allerta_Stencil,Amatic_SC,Annie_Use_Your_Telescope,etc/Amatic_SC/AmaticSC-Regular.ttf"; sourceTree = "<group>"; };
-		DAC223B72496722300DF86D4 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		DAC223BB2496728400DF86D4 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		DAC223C12496908E00DF86D4 /* AmaticSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AmaticSC-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,13 +116,10 @@
 				DAC2237F2495345700DF86D4 /* AppDelegate.swift */,
 				DAC223812495345700DF86D4 /* GameScene.sks */,
 				DAC223832495345700DF86D4 /* Actions.sks */,
-				DAC223852495345700DF86D4 /* GameScene.swift */,
-				DAC223872495345700DF86D4 /* GameViewController.swift */,
-				DAC223BB2496728400DF86D4 /* MainMenuViewController.swift */,
-				DAC223B72496722300DF86D4 /* MainMenu.swift */,
-				DAC223892495345700DF86D4 /* Main.storyboard */,
+				DAC223BF2496906200DF86D4 /* Main */,
+				DAC223C02496908000DF86D4 /* View */,
 				DAC2238C2495345A00DF86D4 /* Assets.xcassets */,
-				DAC2238E2495345A00DF86D4 /* LaunchScreen.storyboard */,
+				DAC223C12496908E00DF86D4 /* AmaticSC-Regular.ttf */,
 				DAC223912495345A00DF86D4 /* Info.plist */,
 			);
 			path = Ppong;
@@ -147,6 +141,25 @@
 				DAC223A72495345A00DF86D4 /* Info.plist */,
 			);
 			path = PpongUITests;
+			sourceTree = "<group>";
+		};
+		DAC223BF2496906200DF86D4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DAC223852495345700DF86D4 /* GameScene.swift */,
+				DAC223872495345700DF86D4 /* GameViewController.swift */,
+				DAC223BB2496728400DF86D4 /* MainMenuViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DAC223C02496908000DF86D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DAC223892495345700DF86D4 /* Main.storyboard */,
+				DAC2238E2495345A00DF86D4 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +302,6 @@
 				DAC223BC2496728400DF86D4 /* MainMenuViewController.swift in Sources */,
 				DAC223882495345700DF86D4 /* GameViewController.swift in Sources */,
 				DAC223802495345700DF86D4 /* AppDelegate.swift in Sources */,
-				DAC223B82496722300DF86D4 /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +311,6 @@
 			files = (
 				DAC223BD2496728400DF86D4 /* MainMenuViewController.swift in Sources */,
 				DAC2239B2495345A00DF86D4 /* PpongTests.swift in Sources */,
-				DAC223B92496722300DF86D4 /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +320,6 @@
 			files = (
 				DAC223BE2496728400DF86D4 /* MainMenuViewController.swift in Sources */,
 				DAC223A62495345A00DF86D4 /* PpongUITests.swift in Sources */,
-				DAC223BA2496722300DF86D4 /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

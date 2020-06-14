@@ -16,10 +16,7 @@ class GameScene: SKScene {
     var player = SKSpriteNode()
     var playerScore = SKLabelNode()
     var enemyScore = SKLabelNode()
-  //  let scoreLabel = SKLabelNode(fontNamed: "AmaticSC-Regular")
-  //  let random = Int.random(in: 1...20)
-  //  var borderOne = SKSpriteNode()
-  //  var borderTwo = SKSpriteNode()
+  
     
     var score = [Int]()
     
@@ -32,14 +29,6 @@ class GameScene: SKScene {
         playerScore.text = "0"
         enemyScore.text = "0"
         
-        // scoreLabel.text = "P / E"
-        // scoreLabel.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
-        // scoreLabel.fontColor = SKColor.white
-        // scoreLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.center
-        // scoreLabel.zPosition = 0
-        // scoreLabel.fontSize = 40
-        // self.addChild(scoreLabel)
-        
         ball = self.childNode(withName: "ball") as! SKSpriteNode
         enemy = self.childNode(withName: "enemy") as! SKSpriteNode
         enemy.position.y = (self.frame.height / 2) - 50
@@ -49,9 +38,7 @@ class GameScene: SKScene {
         
         playerScore = self.childNode(withName: "playerScore") as! SKLabelNode
         enemyScore = self.childNode(withName: "enemyScore") as! SKLabelNode
-       // borderOne = self.childNode(withName: "borderOne") as! SKSpriteNode
-       // borderTwo = self.childNode(withName: "borderTwo") as! SKSpriteNode
-        
+       
         ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20)) // where the ball will move
         ball.physicsBody?.mass = 0.0314159281551838
         
@@ -72,7 +59,7 @@ class GameScene: SKScene {
                     enemy.run(SKAction.moveTo(x: location.x, duration: 0.0))
                 }
                 if location.y < 0{
-                    enemy.run(SKAction.moveTo(x: location.x, duration: 0.0))
+                    player.run(SKAction.moveTo(x: location.x, duration: 0.0))
                 }
             }else{
             player.run(SKAction.moveTo(x: location.x, duration: 0.0))
