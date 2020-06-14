@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vhc-OB-tFD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,96 @@
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gameVC" id="BV1-FR-VrT" customClass="GameViewController" customModule="Ppong" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sky-og-9Ah">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="vhc-OB-tFD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wQq-Wf-wgc">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ph1-TQ-Qda" kind="relationship" relationship="rootViewController" id="N28-Zf-K8y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kwz-7F-BLa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1533" y="134"/>
+        </scene>
+        <!--Main Menu View Controller-->
+        <scene sceneID="DjF-IW-eiU">
+            <objects>
+                <viewController id="Ph1-TQ-Qda" customClass="MainMenuViewController" customModule="Ppong" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oY2-Nr-joE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gB-tR-VNE">
+                                <rect key="frame" x="191" y="381" width="33" height="30"/>
+                                <state key="normal" title="Easy"/>
+                                <connections>
+                                    <action selector="easyButton:" destination="Ph1-TQ-Qda" eventType="touchUpInside" id="WYu-Na-vKJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHR-Sn-AGS">
+                                <rect key="frame" x="180" y="433" width="55" height="30"/>
+                                <state key="normal" title="Medium"/>
+                                <connections>
+                                    <action selector="mediumButton:" destination="Ph1-TQ-Qda" eventType="touchUpInside" id="ems-M5-VyZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s61-R5-bcg">
+                                <rect key="frame" x="190" y="482" width="34" height="30"/>
+                                <state key="normal" title="Hard"/>
+                                <connections>
+                                    <action selector="hardButton:" destination="Ph1-TQ-Qda" eventType="touchUpInside" id="a29-Kd-UoW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLi-t0-aJC">
+                                <rect key="frame" x="180" y="250" width="55" height="30"/>
+                                <state key="normal" title="2 Player"/>
+                                <connections>
+                                    <action selector="playerTwo:" destination="Ph1-TQ-Qda" eventType="touchUpInside" id="RFU-AY-ncf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GHR-Sn-AGS" firstAttribute="top" secondItem="3gB-tR-VNE" secondAttribute="bottom" constant="22" id="0V4-9N-kkd"/>
+                            <constraint firstItem="3gB-tR-VNE" firstAttribute="leading" secondItem="HNf-fP-YIy" secondAttribute="leading" constant="191" id="4yR-9w-hzP"/>
+                            <constraint firstItem="s61-R5-bcg" firstAttribute="top" secondItem="GHR-Sn-AGS" secondAttribute="bottom" constant="19" id="7DZ-WP-S7U"/>
+                            <constraint firstItem="DLi-t0-aJC" firstAttribute="leading" secondItem="HNf-fP-YIy" secondAttribute="leading" constant="180" id="B7o-YJ-Khh"/>
+                            <constraint firstItem="HNf-fP-YIy" firstAttribute="trailing" secondItem="s61-R5-bcg" secondAttribute="trailing" constant="190" id="GA4-qI-463"/>
+                            <constraint firstItem="HNf-fP-YIy" firstAttribute="bottom" secondItem="s61-R5-bcg" secondAttribute="bottom" constant="350" id="N8D-h4-6GJ"/>
+                            <constraint firstItem="GHR-Sn-AGS" firstAttribute="leading" secondItem="HNf-fP-YIy" secondAttribute="leading" constant="180" id="UbZ-M4-87G"/>
+                            <constraint firstItem="3gB-tR-VNE" firstAttribute="top" secondItem="DLi-t0-aJC" secondAttribute="bottom" constant="101" id="d3d-cy-kYM"/>
+                            <constraint firstItem="GHR-Sn-AGS" firstAttribute="top" secondItem="3gB-tR-VNE" secondAttribute="bottom" constant="22" id="foH-sn-HjL"/>
+                            <constraint firstItem="s61-R5-bcg" firstAttribute="leading" secondItem="HNf-fP-YIy" secondAttribute="leading" constant="190" id="gu4-wu-S3l"/>
+                            <constraint firstItem="HNf-fP-YIy" firstAttribute="trailing" secondItem="DLi-t0-aJC" secondAttribute="trailing" constant="179" id="iKq-nc-EyX"/>
+                            <constraint firstItem="HNf-fP-YIy" firstAttribute="trailing" secondItem="GHR-Sn-AGS" secondAttribute="trailing" constant="179" id="k4a-I4-yjq"/>
+                            <constraint firstItem="HNf-fP-YIy" firstAttribute="trailing" secondItem="3gB-tR-VNE" secondAttribute="trailing" constant="190" id="kcf-JU-rrf"/>
+                            <constraint firstItem="s61-R5-bcg" firstAttribute="top" secondItem="GHR-Sn-AGS" secondAttribute="bottom" constant="19" id="r2A-2V-tjj"/>
+                            <constraint firstItem="DLi-t0-aJC" firstAttribute="top" secondItem="HNf-fP-YIy" secondAttribute="top" constant="206" id="snf-5r-DaW"/>
+                            <constraint firstItem="3gB-tR-VNE" firstAttribute="top" secondItem="DLi-t0-aJC" secondAttribute="bottom" constant="101" id="tHz-zU-crZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HNf-fP-YIy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aVK-lG-l6L"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sd3-Fl-01l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-733" y="134"/>
         </scene>
     </scenes>
 </document>

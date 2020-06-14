@@ -67,8 +67,16 @@ class GameScene: SKScene {
         
         for touch in touches {
             let location = touch.location(in: self)
-            
+            if currentGameType == .player2 {
+                if location.y > 0{
+                    enemy.run(SKAction.moveTo(x: location.x, duration: 0.0))
+                }
+                if location.y < 0{
+                    enemy.run(SKAction.moveTo(x: location.x, duration: 0.0))
+                }
+            }else{
             player.run(SKAction.moveTo(x: location.x, duration: 0.0))
+            }
         }
     }
     
@@ -101,12 +109,34 @@ class GameScene: SKScene {
         for touch in touches {
             let location = touch.location(in: self)
             
-            player.run(SKAction.moveTo(x: location.x, duration: 0.0))
+            if currentGameType == .player2 {
+                if location.y > 0 {
+                    enemy.run(SKAction.moveTo(x: location.x, duration: 0.0))
+                }
+                if location.y < 0 {
+                    player.run(SKAction.moveTo(x: location.x, duration: 0.0))
+                }
+            }else {
+                player.run(SKAction.moveTo(x: location.x, duration: 0.0))
+            }
         }
     }
     
     override func update(_ currentTime: TimeInterval) {
-        enemy.run(SKAction.moveTo(x: ball.position.x, duration: 1.0))
+        switch currentGameType {
+        case .easy:
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 1.0))
+            break
+        case .medium:
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.8))
+            break
+        case .hard:
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.5))
+            break
+        case .player2:
+            
+            break
+        }
         
         if ball.position.y <= player.position.y - 15{
             addScore(playerWhoWon: enemy)
