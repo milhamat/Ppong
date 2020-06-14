@@ -17,6 +17,9 @@
 		DAC223902495345A00DF86D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC2238E2495345A00DF86D4 /* LaunchScreen.storyboard */; };
 		DAC2239B2495345A00DF86D4 /* PpongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2239A2495345A00DF86D4 /* PpongTests.swift */; };
 		DAC223A62495345A00DF86D4 /* PpongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC223A52495345A00DF86D4 /* PpongUITests.swift */; };
+		DAC223B4249645F000DF86D4 /* AmaticSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAC223B3249645F000DF86D4 /* AmaticSC-Regular.ttf */; };
+		DAC223B5249645F000DF86D4 /* AmaticSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAC223B3249645F000DF86D4 /* AmaticSC-Regular.ttf */; };
+		DAC223B6249645F000DF86D4 /* AmaticSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAC223B3249645F000DF86D4 /* AmaticSC-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,7 @@
 		DAC223A12495345A00DF86D4 /* PpongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PpongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC223A52495345A00DF86D4 /* PpongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PpongUITests.swift; sourceTree = "<group>"; };
 		DAC223A72495345A00DF86D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC223B3249645F000DF86D4 /* AmaticSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AmaticSC-Regular.ttf"; path = "../../../../../Downloads/Font/Abril_Fatface,Alfa_Slab_One,Allerta_Stencil,Amatic_SC,Annie_Use_Your_Telescope,etc/Amatic_SC/AmaticSC-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 				DAC223992495345A00DF86D4 /* PpongTests */,
 				DAC223A42495345A00DF86D4 /* PpongUITests */,
 				DAC2237D2495345700DF86D4 /* Products */,
+				DAC223B3249645F000DF86D4 /* AmaticSC-Regular.ttf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -240,6 +245,7 @@
 			files = (
 				DAC2238B2495345700DF86D4 /* Main.storyboard in Resources */,
 				DAC223822495345700DF86D4 /* GameScene.sks in Resources */,
+				DAC223B4249645F000DF86D4 /* AmaticSC-Regular.ttf in Resources */,
 				DAC2238D2495345A00DF86D4 /* Assets.xcassets in Resources */,
 				DAC223902495345A00DF86D4 /* LaunchScreen.storyboard in Resources */,
 				DAC223842495345700DF86D4 /* Actions.sks in Resources */,
@@ -250,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC223B5249645F000DF86D4 /* AmaticSC-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC223B6249645F000DF86D4 /* AmaticSC-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
