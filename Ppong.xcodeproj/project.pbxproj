@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAC223802495345700DF86D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2237F2495345700DF86D4 /* AppDelegate.swift */; };
+		DAC223822495345700DF86D4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DAC223812495345700DF86D4 /* GameScene.sks */; };
+		DAC223842495345700DF86D4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = DAC223832495345700DF86D4 /* Actions.sks */; };
+		DAC223862495345700DF86D4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC223852495345700DF86D4 /* GameScene.swift */; };
+		DAC223882495345700DF86D4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC223872495345700DF86D4 /* GameViewController.swift */; };
+		DAC2238B2495345700DF86D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC223892495345700DF86D4 /* Main.storyboard */; };
+		DAC2238D2495345A00DF86D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC2238C2495345A00DF86D4 /* Assets.xcassets */; };
+		DAC223902495345A00DF86D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC2238E2495345A00DF86D4 /* LaunchScreen.storyboard */; };
+		DAC2239B2495345A00DF86D4 /* PpongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2239A2495345A00DF86D4 /* PpongTests.swift */; };
+		DAC223A62495345A00DF86D4 /* PpongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC223A52495345A00DF86D4 /* PpongUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAC223972495345A00DF86D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAC223742495345700DF86D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAC2237B2495345700DF86D4;
+			remoteInfo = Ppong;
+		};
+		DAC223A22495345A00DF86D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAC223742495345700DF86D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAC2237B2495345700DF86D4;
+			remoteInfo = Ppong;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DAC2237C2495345700DF86D4 /* Ppong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ppong.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC2237F2495345700DF86D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAC223812495345700DF86D4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		DAC223832495345700DF86D4 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		DAC223852495345700DF86D4 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		DAC223872495345700DF86D4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		DAC2238A2495345700DF86D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAC2238C2495345A00DF86D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAC2238F2495345A00DF86D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAC223912495345A00DF86D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC223962495345A00DF86D4 /* PpongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PpongTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC2239A2495345A00DF86D4 /* PpongTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PpongTests.swift; sourceTree = "<group>"; };
+		DAC2239C2495345A00DF86D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC223A12495345A00DF86D4 /* PpongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PpongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC223A52495345A00DF86D4 /* PpongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PpongUITests.swift; sourceTree = "<group>"; };
+		DAC223A72495345A00DF86D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAC223792495345700DF86D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC223932495345A00DF86D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC2239E2495345A00DF86D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAC223732495345700DF86D4 = {
+			isa = PBXGroup;
+			children = (
+				DAC2237E2495345700DF86D4 /* Ppong */,
+				DAC223992495345A00DF86D4 /* PpongTests */,
+				DAC223A42495345A00DF86D4 /* PpongUITests */,
+				DAC2237D2495345700DF86D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAC2237D2495345700DF86D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAC2237C2495345700DF86D4 /* Ppong.app */,
+				DAC223962495345A00DF86D4 /* PpongTests.xctest */,
+				DAC223A12495345A00DF86D4 /* PpongUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAC2237E2495345700DF86D4 /* Ppong */ = {
+			isa = PBXGroup;
+			children = (
+				DAC2237F2495345700DF86D4 /* AppDelegate.swift */,
+				DAC223812495345700DF86D4 /* GameScene.sks */,
+				DAC223832495345700DF86D4 /* Actions.sks */,
+				DAC223852495345700DF86D4 /* GameScene.swift */,
+				DAC223872495345700DF86D4 /* GameViewController.swift */,
+				DAC223892495345700DF86D4 /* Main.storyboard */,
+				DAC2238C2495345A00DF86D4 /* Assets.xcassets */,
+				DAC2238E2495345A00DF86D4 /* LaunchScreen.storyboard */,
+				DAC223912495345A00DF86D4 /* Info.plist */,
+			);
+			path = Ppong;
+			sourceTree = "<group>";
+		};
+		DAC223992495345A00DF86D4 /* PpongTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAC2239A2495345A00DF86D4 /* PpongTests.swift */,
+				DAC2239C2495345A00DF86D4 /* Info.plist */,
+			);
+			path = PpongTests;
+			sourceTree = "<group>";
+		};
+		DAC223A42495345A00DF86D4 /* PpongUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAC223A52495345A00DF86D4 /* PpongUITests.swift */,
+				DAC223A72495345A00DF86D4 /* Info.plist */,
+			);
+			path = PpongUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAC2237B2495345700DF86D4 /* Ppong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC223AA2495345A00DF86D4 /* Build configuration list for PBXNativeTarget "Ppong" */;
+			buildPhases = (
+				DAC223782495345700DF86D4 /* Sources */,
+				DAC223792495345700DF86D4 /* Frameworks */,
+				DAC2237A2495345700DF86D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ppong;
+			productName = Ppong;
+			productReference = DAC2237C2495345700DF86D4 /* Ppong.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAC223952495345A00DF86D4 /* PpongTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC223AD2495345A00DF86D4 /* Build configuration list for PBXNativeTarget "PpongTests" */;
+			buildPhases = (
+				DAC223922495345A00DF86D4 /* Sources */,
+				DAC223932495345A00DF86D4 /* Frameworks */,
+				DAC223942495345A00DF86D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAC223982495345A00DF86D4 /* PBXTargetDependency */,
+			);
+			name = PpongTests;
+			productName = PpongTests;
+			productReference = DAC223962495345A00DF86D4 /* PpongTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAC223A02495345A00DF86D4 /* PpongUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC223B02495345A00DF86D4 /* Build configuration list for PBXNativeTarget "PpongUITests" */;
+			buildPhases = (
+				DAC2239D2495345A00DF86D4 /* Sources */,
+				DAC2239E2495345A00DF86D4 /* Frameworks */,
+				DAC2239F2495345A00DF86D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAC223A32495345A00DF86D4 /* PBXTargetDependency */,
+			);
+			name = PpongUITests;
+			productName = PpongUITests;
+			productReference = DAC223A12495345A00DF86D4 /* PpongUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAC223742495345700DF86D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Muhammad Ilham Ashiddiq Tresnawan";
+				TargetAttributes = {
+					DAC2237B2495345700DF86D4 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					DAC223952495345A00DF86D4 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = DAC2237B2495345700DF86D4;
+					};
+					DAC223A02495345A00DF86D4 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = DAC2237B2495345700DF86D4;
+					};
+				};
+			};
+			buildConfigurationList = DAC223772495345700DF86D4 /* Build configuration list for PBXProject "Ppong" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAC223732495345700DF86D4;
+			productRefGroup = DAC2237D2495345700DF86D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAC2237B2495345700DF86D4 /* Ppong */,
+				DAC223952495345A00DF86D4 /* PpongTests */,
+				DAC223A02495345A00DF86D4 /* PpongUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAC2237A2495345700DF86D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC2238B2495345700DF86D4 /* Main.storyboard in Resources */,
+				DAC223822495345700DF86D4 /* GameScene.sks in Resources */,
+				DAC2238D2495345A00DF86D4 /* Assets.xcassets in Resources */,
+				DAC223902495345A00DF86D4 /* LaunchScreen.storyboard in Resources */,
+				DAC223842495345700DF86D4 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC223942495345A00DF86D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC2239F2495345A00DF86D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAC223782495345700DF86D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC223862495345700DF86D4 /* GameScene.swift in Sources */,
+				DAC223882495345700DF86D4 /* GameViewController.swift in Sources */,
+				DAC223802495345700DF86D4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC223922495345A00DF86D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC2239B2495345A00DF86D4 /* PpongTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC2239D2495345A00DF86D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC223A62495345A00DF86D4 /* PpongUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAC223982495345A00DF86D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAC2237B2495345700DF86D4 /* Ppong */;
+			targetProxy = DAC223972495345A00DF86D4 /* PBXContainerItemProxy */;
+		};
+		DAC223A32495345A00DF86D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAC2237B2495345700DF86D4 /* Ppong */;
+			targetProxy = DAC223A22495345A00DF86D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAC223892495345700DF86D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAC2238A2495345700DF86D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAC2238E2495345A00DF86D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAC2238F2495345A00DF86D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAC223A82495345A00DF86D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DAC223A92495345A00DF86D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAC223AB2495345A00DF86D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A4J3R44FB;
+				INFOPLIST_FILE = Ppong/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rexy.Ppong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAC223AC2495345A00DF86D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A4J3R44FB;
+				INFOPLIST_FILE = Ppong/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rexy.Ppong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DAC223AE2495345A00DF86D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A4J3R44FB;
+				INFOPLIST_FILE = PpongTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rexy.PpongTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ppong.app/Ppong";
+			};
+			name = Debug;
+		};
+		DAC223AF2495345A00DF86D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A4J3R44FB;
+				INFOPLIST_FILE = PpongTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rexy.PpongTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ppong.app/Ppong";
+			};
+			name = Release;
+		};
+		DAC223B12495345A00DF86D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A4J3R44FB;
+				INFOPLIST_FILE = PpongUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rexy.PpongUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ppong;
+			};
+			name = Debug;
+		};
+		DAC223B22495345A00DF86D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A4J3R44FB;
+				INFOPLIST_FILE = PpongUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rexy.PpongUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ppong;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAC223772495345700DF86D4 /* Build configuration list for PBXProject "Ppong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC223A82495345A00DF86D4 /* Debug */,
+				DAC223A92495345A00DF86D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC223AA2495345A00DF86D4 /* Build configuration list for PBXNativeTarget "Ppong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC223AB2495345A00DF86D4 /* Debug */,
+				DAC223AC2495345A00DF86D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC223AD2495345A00DF86D4 /* Build configuration list for PBXNativeTarget "PpongTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC223AE2495345A00DF86D4 /* Debug */,
+				DAC223AF2495345A00DF86D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC223B02495345A00DF86D4 /* Build configuration list for PBXNativeTarget "PpongUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC223B12495345A00DF86D4 /* Debug */,
+				DAC223B22495345A00DF86D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAC223742495345700DF86D4 /* Project object */;
+}
