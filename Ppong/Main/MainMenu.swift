@@ -15,12 +15,27 @@ enum gameType {
     case player2
 }
 
-class MainMenuViewController: UIViewController {
+class MainMenu: UIViewController {
 
+    @IBOutlet weak var titleLable: UILabel!
+    @IBOutlet weak var player2Button: UIButton!
+    @IBOutlet weak var easyButton: UIButton!
+    @IBOutlet weak var mediumButton: UIButton!
+    @IBOutlet weak var hardButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleLable.font = UIFont(name: "AmaticSC-Regular", size: 46)
+        titleLable.text = "Ppong"
 
-       
+        player2Button.titleLabel?.font = UIFont(name: "AmaticSC-Regular", size: 32)
+        player2Button.titleLabel?.textColor = UIColor.white
+        
+        easyButton.titleLabel?.font = UIFont(name: "AmaticSC-Regular", size: 32)
+        mediumButton.titleLabel?.font = UIFont(name: "AmaticSC-Regular", size: 32)
+        hardButton.titleLabel?.font = UIFont(name: "AmaticSC-Regular", size: 32)
+        
     }
     
     func moveToGame(game: gameType){

@@ -9,6 +9,17 @@
 import SpriteKit
 import GameplayKit
 
+var score = [Int]()
+
+enum whoWinIt{
+    case playerWon
+    case enemyWon
+    case playerTwoWon
+    case draw
+}
+
+var champion = whoWinIt.draw
+
 class GameScene: SKScene {
     
     var ball = SKSpriteNode()
@@ -17,12 +28,7 @@ class GameScene: SKScene {
     var playerScore = SKLabelNode()
     var enemyScore = SKLabelNode()
   
-    
-    var score = [Int]()
-    
     override func didMove(to view: SKView) {
-        
-        // startGame()
         
         score = [0,0]
         
@@ -30,10 +36,13 @@ class GameScene: SKScene {
         enemyScore.text = "0"
         
         ball = self.childNode(withName: "ball") as! SKSpriteNode
+        ball.name = "ball"
         enemy = self.childNode(withName: "enemy") as! SKSpriteNode
+        enemy.name = "enemy"
         enemy.position.y = (self.frame.height / 2) - 50
         
         player = self.childNode(withName: "player") as! SKSpriteNode
+        player.name = "player"
         player.position.y = (-self.frame.height / 2) + 50
         
         playerScore = self.childNode(withName: "playerScore") as! SKLabelNode
@@ -88,9 +97,26 @@ class GameScene: SKScene {
             ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
         }
         
+        if score[0] == 10 || score[1] == 10 {
+            if score[0] == 10{
+                print("playerWon")
+                champion = whoWinIt.playerWon
+            } else {
+                print("enemyWon")
+                champion = whoWinIt.enemyWon
+            }
+            gameOver()
+            print("trigered")
+        }
         //print(score)
     }
     
+    func gameOver(){
+        ball.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
+        player.isPaused = true
+        enemy.isPaused = true
+
+    }
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         for touch in touches {
@@ -125,12 +151,14 @@ class GameScene: SKScene {
             break
         }
         
-        if ball.position.y <= player.position.y - 15{
+        if ball.position.y <= player.position.y - 20{
             addScore(playerWhoWon: enemy)
             
-        } else if ball.position.y >= enemy.position.y + 15{
+        } else if ball.position.y >= enemy.position.y + 20{
             addScore(playerWhoWon: player)
             
         }
+//        print("enemy : \(score[1])")
+//        print("player : \(score[0])")
     }
 }
