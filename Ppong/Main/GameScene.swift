@@ -27,7 +27,7 @@ class GameScene: SKScene {
     var player = SKSpriteNode()
     var playerScore = SKLabelNode()
     var enemyScore = SKLabelNode()
-  
+  // MARK: -First Launc Screen
     override func didMove(to view: SKView) {
         
         score = [0,0]
@@ -58,7 +58,7 @@ class GameScene: SKScene {
         
         self.physicsBody = border
     }
-    
+    // MARK: -When Touch Began
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         for touch in touches {
@@ -79,7 +79,7 @@ class GameScene: SKScene {
    // func startGame(){
    //     score = [0,0]
    // }
-    
+    // MARK: -Score Logic
     func addScore(playerWhoWon: SKSpriteNode){
         ball.position = CGPoint(x: 0, y: 0)
         ball.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
@@ -110,13 +110,26 @@ class GameScene: SKScene {
         }
         //print(score)
     }
-    
+    // MARK: -GameOver and ScreenChange
     func gameOver(){
         ball.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
         player.isPaused = true
         enemy.isPaused = true
+        
+        let changeScene = SKAction.run(changeScreen)
+        let waitToChange = SKAction.wait(forDuration: 1)
+        let changeScreenScene = SKAction.sequence([changeScene,waitToChange])
+        self.run(changeScreenScene)
 
     }
+    
+    func changeScreen(){
+        let sceneMove = GameOver(size: self.size)
+        sceneMove.scaleMode = self.scaleMode
+        let transitionTime = SKTransition.fade(withDuration: 0.5)
+        self.view!.presentScene(sceneMove, transition: transitionTime)
+    }
+    // MARK: -Update
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         for touch in touches {
