@@ -97,8 +97,8 @@ class GameScene: SKScene {
             ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
         }
         
-        if score[0] == 10 || score[1] == 10 {
-            if score[0] == 10{
+        if score[0] == 5 || score[1] == 5 {
+            if score[0] == 5{
                 print("playerWon")
                 champion = whoWinIt.playerWon
             } else {

@@ -40,7 +40,7 @@
         <!--Main Menu-->
         <scene sceneID="DjF-IW-eiU">
             <objects>
-                <viewController id="Ph1-TQ-Qda" customClass="MainMenu" customModule="Ppong" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MM" modalPresentationStyle="fullScreen" id="Ph1-TQ-Qda" customClass="MainMenu" customModule="Ppong" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oY2-Nr-joE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,8 +84,17 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gmQ-hC-TZD">
                                                 <rect key="frame" x="174" y="70.5" width="66" height="132"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHR-Sn-AGS">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gB-tR-VNE">
                                                         <rect key="frame" x="0.0" y="0.0" width="66" height="34"/>
+                                                        <state key="normal" title="Easy">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="easyButton:" destination="Ph1-TQ-Qda" eventType="touchUpInside" id="WYu-Na-vKJ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHR-Sn-AGS">
+                                                        <rect key="frame" x="0.0" y="49" width="66" height="34"/>
                                                         <state key="normal" title="Medium">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -94,21 +103,12 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s61-R5-bcg">
-                                                        <rect key="frame" x="0.0" y="49" width="66" height="34"/>
+                                                        <rect key="frame" x="0.0" y="98" width="66" height="34"/>
                                                         <state key="normal" title="Hard">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="hardButton:" destination="Ph1-TQ-Qda" eventType="touchUpInside" id="a29-Kd-UoW"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gB-tR-VNE">
-                                                        <rect key="frame" x="0.0" y="98" width="66" height="34"/>
-                                                        <state key="normal" title="Easy">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="easyButton:" destination="Ph1-TQ-Qda" eventType="touchUpInside" id="WYu-Na-vKJ"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>

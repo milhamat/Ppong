@@ -10,6 +10,10 @@ import Foundation
 import SpriteKit
 import UIKit
 
+//protocol TransitionDelegate: SKSceneDelegate {
+//    func returnToMainMenu()
+//}
+
 class GameOver: SKScene {
     
     let winner = SKLabelNode(fontNamed: "AmaticSC-Regular")
@@ -36,16 +40,27 @@ class GameOver: SKScene {
         
          
     }
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        for touch: AnyObject in touches {
-//            let poinOfTouch = touch.location(in: self)
-//            if playAgain.contains(poinOfTouch){
-//                
-//                let sceneMove = MainMenu()
-//                //sceneMove.scaleMode = self.scaleMode
-//                let myTransition = .fade(withDuration: 0.5)
-//                self.view!.presentScene(sceneMove, transition: myTransition)
-//            }
-//        }
-//    }
-}
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        for touch: AnyObject in touches {
+            let poinOfTouch = touch.location(in: self)
+            if playAgain.contains(poinOfTouch){
+                print("playAgainTapped")
+                
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+                        let vc = storyboard.instantiateViewController(withIdentifier: "MM")
+                        vc.view.frame = (self.view?.frame)!
+                        vc.view.layoutIfNeeded()
+
+                        UIView.transition(with: self.view!, duration: 0.3, options: .transitionFlipFromRight, animations:
+                            {
+                                self.view?.window?.rootViewController = vc
+                        }, completion: { completed in
+                        })
+                    }
+
+            }
+        }
+    }
+

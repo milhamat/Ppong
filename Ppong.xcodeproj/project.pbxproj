@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA51F2D0249A793600C7270B /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51F2CF249A793600C7270B /* GameOver.swift */; };
+		DA51F2D2249B8EA600C7270B /* MainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51F2D1249B8EA600C7270B /* MainMenuVC.swift */; };
 		DAC223802495345700DF86D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2237F2495345700DF86D4 /* AppDelegate.swift */; };
 		DAC223822495345700DF86D4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DAC223812495345700DF86D4 /* GameScene.sks */; };
 		DAC223842495345700DF86D4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = DAC223832495345700DF86D4 /* Actions.sks */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		DA51F2CF249A793600C7270B /* GameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
+		DA51F2D1249B8EA600C7270B /* MainMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuVC.swift; sourceTree = "<group>"; };
 		DAC2237C2495345700DF86D4 /* Ppong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ppong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC2237F2495345700DF86D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAC223812495345700DF86D4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -148,9 +150,10 @@
 		DAC223BF2496906200DF86D4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				DAC223852495345700DF86D4 /* GameScene.swift */,
 				DAC223872495345700DF86D4 /* GameViewController.swift */,
+				DA51F2D1249B8EA600C7270B /* MainMenuVC.swift */,
 				DAC223BB2496728400DF86D4 /* MainMenu.swift */,
+				DAC223852495345700DF86D4 /* GameScene.swift */,
 				DA51F2CF249A793600C7270B /* GameOver.swift */,
 			);
 			path = Main;
@@ -302,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAC223862495345700DF86D4 /* GameScene.swift in Sources */,
+				DA51F2D2249B8EA600C7270B /* MainMenuVC.swift in Sources */,
 				DAC223BC2496728400DF86D4 /* MainMenu.swift in Sources */,
 				DAC223882495345700DF86D4 /* GameViewController.swift in Sources */,
 				DA51F2D0249A793600C7270B /* GameOver.swift in Sources */,
